@@ -1,4 +1,4 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
+// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 using System;
@@ -73,11 +73,7 @@ namespace Microsoft.Azure.SignalR.Samples.Management
             {
                 while (true)
                 {
-                    var argLine = Console.ReadLine();
-                    if (argLine == null)
-                    {
-                        continue;
-                    }
+                    var argLine = "broadcast x";
                     var args = argLine.Split(' ');
 
                     if (args.Length == 2 && args[0].Equals("broadcast"))
